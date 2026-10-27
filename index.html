@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biyaya Tablea | Crafted with Faith. Made with Love.</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Alex+Brush&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cacao: {
+              900: '#2A170F', /* Darkest roasted bean */
+              800: '#3D2314', /* Deep chocolate */
+              700: '#5A341E', /* Warm cacao */
+              600: '#7B4A2D', /* Cinnamon wood */
+              500: '#9C623C', /* Warm terracotta */
+              100: '#F4ECE4', /* Light cream/latte */
+              50:  '#FAF6F0', /* Parchment background */
+            },
+            parchment: '#FDFBF7'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            display: ['"Cinzel"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Alex Brush"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-parchment text-cacao-900 font-sans antialiased selection:bg-cacao-700 selection:text-white">
+
+  <!-- TOP BANNER -->
+  <div class="bg-cacao-900 text-cacao-100 text-xs md:text-sm py-2 px-4 text-center tracking-wider font-light flex items-center justify-center gap-2 border-b border-cacao-800">
+    <span>✨</span>
+    <span>“Every good and perfect gift is from above” — James 1:17</span>
+    <span class="hidden md:inline">| Support Local Philippine Artisans</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-parchment/95 backdrop-blur-md border-b border-cacao-600/10">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-cacao-800 flex items-center justify-center text-amber-100 font-display text-xl shadow-inner group-hover:bg-cacao-700 transition">
+          ☕
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold tracking-tight text-cacao-900 block leading-none">Biyaya Tablea</span>
+          <span class="text-[10px] tracking-widest uppercase text-cacao-600 font-medium">Philippine Artisan Cacao</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-cacao-800">
+        <a href="#story" class="hover:text-cacao-600 transition">Our Story</a>
+        <a href="#craft" class="hover:text-cacao-600 transition">Craftsmanship</a>
+        <a href="#benefits" class="hover:text-cacao-600 transition">Health Benefits</a>
+        <a href="#flavors" class="hover:text-cacao-600 transition">Flavors</a>
+        <a href="#brewing" class="hover:text-cacao-600 transition">Brewing Guide</a>
+      </nav>
+
+      <a href="tel:09278888760" class="inline-flex items-center gap-2 bg-cacao-800 text-amber-50 px-4 py-2 rounded-full text-sm font-medium hover:bg-cacao-700 transition shadow-sm">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <span>0927 8888 760</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative py-16 md:py-24 border-b border-cacao-600/10 overflow-hidden">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="font-script text-3xl md:text-4xl text-cacao-600 mb-2">Crafted with faith. Made with love.</p>
+      <h1 class="font-serif text-4xl sm:text-6xl text-cacao-900 font-bold tracking-tight max-w-3xl mx-auto leading-tight mb-6">
+        Pure Philippine Tablea, Roasted for the Soul
+      </h1>
+      <p class="text-base sm:text-lg text-cacao-700/90 max-w-2xl mx-auto leading-relaxed mb-8">
+        Rooted in the first Asian country where cacao was ever planted. Every tablet is hand-peeled, fire-roasted, and molded with heartfelt dedication by local farmers.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#flavors" class="w-full sm:w-auto px-8 py-3.5 bg-cacao-800 text-amber-50 font-medium rounded-full shadow-md hover:bg-cacao-700 transition">
+          Explore Flavors
+        </a>
+        <a href="#brewing" class="w-full sm:w-auto px-8 py-3.5 bg-cacao-100 text-cacao-900 font-medium rounded-full hover:bg-cacao-200 transition border border-cacao-600/20">
+          How to Brew
+        </a>
+      </div>
+
+      <!-- Quick Trust Indicators -->
+      <div class="mt-14 pt-10 border-t border-cacao-600/15 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <span class="block font-serif text-xl font-bold text-cacao-800">100% Raw</span>
+          <span class="text-xs text-cacao-600 uppercase tracking-wider">Philippine Single-Origin</span>
+        </div>
+        <div>
+          <span class="block font-serif text-xl font-bold text-cacao-800">Fire-Roasted</span>
+          <span class="text-xs text-cacao-600 uppercase tracking-wider">Time-Honored Technique</span>
+        </div>
+        <div>
+          <span class="block font-serif text-xl font-bold text-cacao-800">Nutrient-Dense</span>
+          <span class="text-xs text-cacao-600 uppercase tracking-wider">Magnesium, Iron & Antioxidants</span>
+        </div>
+        <div>
+          <span class="block font-serif text-xl font-bold text-cacao-800">Fair Livelihood</span>
+          <span class="text-xs text-cacao-600 uppercase tracking-wider">Direct Farmer Blessing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY SECTION -->
+  <section id="story" class="py-20 bg-cacao-50 border-b border-cacao-600/10">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-xs font-semibold tracking-widest text-cacao-600 uppercase block mb-2">Our Heritage & Calling</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cacao-900 mb-6">
+          “Biyaya means blessing, and every good gift comes from God.”
+        </h2>
+        <div class="space-y-4 text-cacao-800/90 leading-relaxed text-sm sm:text-base">
+          <p>
+            Discovering that pure cacao provides a worry-free, healthier choice for all to enjoy chocolate motivated us to believe in authentic cacao tableas.
+          </p>
+          <p>
+            Philippine-grown cacao holds deep historical wonder—a crop that originated in South America yet thrives beautifully right here in our country, the <strong>first Asian country where cacao was planted</strong>.
+          </p>
+          <p>
+            Witnessing the heart, patience, and dedication our local farmers and artisans pour into every single batch moved us deeply. By building <em>Biyaya</em>, we are honored to work hand-in-hand to support their livelihoods while keeping this beloved heritage alive.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-parchment p-8 rounded-2xl border border-cacao-600/20 shadow-sm relative">
+        <div class="absolute -top-3 -right-3 bg-cacao-800 text-amber-100 text-xs uppercase tracking-widest px-3 py-1 rounded-full font-serif">
+          Shared Blessing
+        </div>
+        <h3 class="font-display text-xl text-cacao-900 mb-4 tracking-wide">Fuel Your Body Naturally</h3>
+        <p class="text-cacao-700 text-sm leading-relaxed mb-6">
+          Every cup goes beyond taste—it is a conscious ritual packed with pure botanical nourishment.
+        </p>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <div class="p-4 bg-cacao-100/50 rounded-xl border border-cacao-600/10">
+            <span class="text-2xl block mb-1">❤️</span>
+            <h4 class="font-bold text-cacao-900 text-sm">Heart-Healthy</h4>
+            <p class="text-xs text-cacao-700 mt-1">Rich in flavanols that boost circulation and cardiovascular vitality.</p>
+          </div>
+          <div class="p-4 bg-cacao-100/50 rounded-xl border border-cacao-600/10">
+            <span class="text-2xl block mb-1">🛡️</span>
+            <h4 class="font-bold text-cacao-900 text-sm">Antioxidant-Rich</h4>
+            <p class="text-xs text-cacao-700 mt-1">Loaded with polyphenols that defend against daily oxidative stress.</p>
+          </div>
+          <div class="p-4 bg-cacao-100/50 rounded-xl border border-cacao-600/10">
+            <span class="text-2xl block mb-1">⚡</span>
+            <h4 class="font-bold text-cacao-900 text-sm">Magnesium & Iron</h4>
+            <p class="text-xs text-cacao-700 mt-1">Essential trace minerals to sustain physical energy and oxygen flow.</p>
+          </div>
+          <div class="p-4 bg-cacao-100/50 rounded-xl border border-cacao-600/10">
+            <span class="text-2xl block mb-1">🧠</span>
+            <h4 class="font-bold text-cacao-900 text-sm">Brain & Mood</h4>
+            <p class="text-xs text-cacao-700 mt-1">Promotes serotonin, dopamine, and clarity naturally without the crash.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRADITIONAL CRAFTSMANSHIP PROCESS -->
+  <section id="craft" class="py-20 border-b border-cacao-600/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-semibold tracking-widest text-cacao-600 uppercase block mb-2">Honoring the Ancestral Craft</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cacao-900 mb-4">Traditional Craftsmanship</h2>
+        <p class="text-cacao-700 text-sm sm:text-base">
+          Biyaya Tablea relies on time-honored processing techniques handed down through generations.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-4 text-center">
+        <!-- Step 1 -->
+        <div class="p-5 rounded-xl bg-cacao-50 border border-cacao-600/10 flex flex-col items-center">
+          <div class="w-10 h-10 rounded-full bg-cacao-800 text-amber-100 flex items-center justify-center font-bold text-sm mb-3">1</div>
+          <h4 class="font-serif font-bold text-cacao-900 text-sm mb-1">Harvested</h4>
+          <p class="text-xs text-cacao-600">Hand-selected ripe cacao pods.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="p-5 rounded-xl bg-cacao-50 border border-cacao-600/10 flex flex-col items-center">
+          <div class="w-10 h-10 rounded-full bg-cacao-800 text-amber-100 flex items-center justify-center font-bold text-sm mb-3">2</div>
+          <h4 class="font-serif font-bold text-cacao-900 text-sm mb-1">Fermented</h4>
+          <p class="text-xs text-cacao-600">Developing deep complex notes.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="p-5 rounded-xl bg-cacao-50 border border-cacao-600/10 flex flex-col items-center">
+          <div class="w-10 h-10 rounded-full bg-cacao-800 text-amber-100 flex items-center justify-center font-bold text-sm mb-3">3</div>
+          <h4 class="font-serif font-bold text-cacao-900 text-sm mb-1">Sun-Dried</h4>
+          <p class="text-xs text-cacao-600">Cured under the tropical sun.</p>
+        </div>
+        <!-- Step 4 -->
+        <div class="p-5 rounded-xl bg-cacao-50 border border-cacao-600/10 flex flex-col items-center">
+          <div class="w-10 h-10 rounded-full bg-cacao-800 text-amber-100 flex items-center justify-center font-bold text-sm mb-3">4</div>
+          <h4 class="font-serif font-bold text-cacao-900 text-sm mb-1">Fire-Roasted</h4>
+          <p class="text-xs text-cacao-600">Unlocking rich, smoky aroma.</p>
+        </div>
+        <!-- Step 5 -->
+        <div class="p-5 rounded-xl bg-cacao-50 border border-cacao-600/10 flex flex-col items-center">
+          <div class="w-10 h-10 rounded-full bg-cacao-800 text-amber-100 flex items-center justify-center font-bold text-sm mb-3">5</div>
+          <h4 class="font-serif font-bold text-cacao-900 text-sm mb-1">Hand-Peeled</h4>
+          <p class="text-xs text-cacao-600">Gently hulled with utmost care.</p>
+        </div>
+        <!-- Step 6 -->
+        <div class="p-5 rounded-xl bg-cacao-50 border border-cacao-600/10 flex flex-col items-center">
+          <div class="w-10 h-10 rounded-full bg-cacao-800 text-amber-100 flex items-center justify-center font-bold text-sm mb-3">6</div>
+          <h4 class="font-serif font-bold text-cacao-900 text-sm mb-1">Molded</h4>
+          <p class="text-xs text-cacao-600">Ground to paste & pressed into tablets.</p>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center text-sm font-serif italic text-cacao-700">
+        “Every purchase truly becomes a shared blessing.”
+      </div>
+    </div>
+  </section>
+
+  <!-- DEFINE YOUR TASTE (PRODUCT SHOWCASE) -->
+  <section id="flavors" class="py-20 bg-cacao-100/40 border-b border-cacao-600/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-semibold tracking-widest text-cacao-600 uppercase block mb-2">Curated Blends</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cacao-900 mb-4">Define Your Taste</h2>
+        <p class="text-cacao-700 text-sm sm:text-base">
+          Choose from three distinct expressions of traditional Philippine tablea, crafted for every mood and palate.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1: Pure -->
+        <div class="bg-parchment rounded-2xl p-8 border border-cacao-600/20 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-xs font-bold tracking-widest uppercase bg-cacao-800 text-amber-50 px-3 py-1 rounded-full">Intensity: Bold</span>
+              <span class="text-2xl">🍫</span>
+            </div>
+            <h3 class="font-serif text-3xl font-bold text-cacao-900 mb-2">Pure</h3>
+            <p class="font-serif italic text-cacao-600 text-sm mb-4">100% Raw, Bold, & Earthy</p>
+            <p class="text-sm text-cacao-800/90 leading-relaxed mb-6">
+              Unapologetically rich and robust. Made for true dark chocolate connoisseurs, keto diets, and those who desire pure, unsweetened cacao bliss.
+            </p>
+          </div>
+          <div class="border-t border-cacao-600/10 pt-4">
+            <span class="text-xs text-cacao-600 block uppercase tracking-wider mb-2">Best For:</span>
+            <p class="text-xs font-medium text-cacao-900">Black artisanal hot chocolate, keto smoothies & rich baking.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Bittersweet -->
+        <div class="bg-parchment rounded-2xl p-8 border-2 border-cacao-600/40 shadow-md flex flex-col justify-between relative hover:shadow-lg transition">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-cacao-600 text-white text-[11px] font-bold tracking-widest uppercase px-4 py-1 rounded-full shadow-sm">
+            Top Recommendation
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-4 mt-2">
+              <span class="text-xs font-bold tracking-widest uppercase bg-cacao-700 text-amber-50 px-3 py-1 rounded-full">Intensity: Balanced</span>
+              <span class="text-2xl">🥣</span>
+            </div>
+            <h3 class="font-serif text-3xl font-bold text-cacao-900 mb-2">Bittersweet</h3>
+            <p class="font-serif italic text-cacao-600 text-sm mb-4">Balanced with Gentle Sweetness</p>
+            <p class="text-sm text-cacao-800/90 leading-relaxed mb-6">
+              The sweet spot between intense cacao and delicate cane sweetness. Formulated to deliver deep complexity without overpowering the palate.
+            </p>
+          </div>
+          <div class="border-t border-cacao-600/10 pt-4">
+            <span class="text-xs text-cacao-600 block uppercase tracking-wider mb-2">Best For:</span>
+            <p class="text-xs font-medium text-cacao-900">Authentic Filipino champorado, traditional morning tsokolate.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Sweet -->
+        <div class="bg-parchment rounded-2xl p-8 border border-cacao-600/20 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-xs font-bold tracking-widest uppercase bg-cacao-500 text-amber-50 px-3 py-1 rounded-full">Intensity: Comforting</span>
+              <span class="text-2xl">🍯</span>
+            </div>
+            <h3 class="font-serif text-3xl font-bold text-cacao-900 mb-2">Sweet</h3>
+            <p class="font-serif italic text-cacao-600 text-sm mb-4">Smooth, Nostalgic, & Comforting</p>
+            <p class="text-sm text-cacao-800/90 leading-relaxed mb-6">
+              Infused with deep toffee notes and smooth creaminess. A family-favorite crowd-pleaser that warms hearts across all generations.
+            </p>
+          </div>
+          <div class="border-t border-cacao-600/10 pt-4">
+            <span class="text-xs text-cacao-600 block uppercase tracking-wider mb-2">Best For:</span>
+            <p class="text-xs font-medium text-cacao-900">Kids, sweet-tooth cravings, milk-heavy hot cocoa, and iced drinks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COOKING / BREWING INSTRUCTIONS -->
+  <section id="brewing" class="py-20 border-b border-cacao-600/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-semibold tracking-widest text-cacao-600 uppercase block mb-2">Brewing Tradition</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cacao-900 mb-4">Cooking Instructions</h2>
+        <p class="text-cacao-700 text-sm sm:text-base">
+          Bring out the aromatic oils and velvety texture with these simple, authentic pot-simmer steps.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        <!-- PURE RECIPE -->
+        <div class="bg-parchment border border-cacao-600/20 rounded-2xl p-6 md:p-8 shadow-sm">
+          <div class="flex items-center gap-3 mb-6 pb-4 border-b border-cacao-600/10">
+            <span class="font-display font-bold text-lg md:text-xl text-cacao-900 uppercase">Pure Blend</span>
+            <span class="text-xs text-cacao-600 bg-cacao-100 px-3 py-1 rounded-full font-semibold">1 Serving = 1 Tablea</span>
+          </div>
+
+          <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">1</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Add Water</h5>
+                <p class="text-xs text-cacao-700 mt-1">Pour <strong>300 mL</strong> of water into a pot.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">2</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Add Tablea</h5>
+                <p class="text-xs text-cacao-700 mt-1">Add <strong>1 tablea</strong> directly into the water.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">3</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Simmer Uncovered</h5>
+                <p class="text-xs text-cacao-700 mt-1">Simmer over medium to low heat for <strong>10–12 minutes</strong> or until fully melted.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">4</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Finish & Stir</h5>
+                <p class="text-xs text-cacao-700 mt-1">Add sweetener or milk as desired. Stir well before serving.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BITTERSWEET RECIPE -->
+        <div class="bg-parchment border border-cacao-600/20 rounded-2xl p-6 md:p-8 shadow-sm">
+          <div class="flex items-center gap-3 mb-6 pb-4 border-b border-cacao-600/10">
+            <span class="font-display font-bold text-lg md:text-xl text-cacao-900 uppercase">Bittersweet Blend</span>
+            <span class="text-xs text-cacao-600 bg-cacao-100 px-3 py-1 rounded-full font-semibold">1 Serving = 2 Tableas</span>
+          </div>
+
+          <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">1</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Add Water</h5>
+                <p class="text-xs text-cacao-700 mt-1">Pour <strong>250 mL (1 mug)</strong> of water into a pot.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">2</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Add Tableas</h5>
+                <p class="text-xs text-cacao-700 mt-1">Add <strong>2 tableas</strong> into the pot.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">3</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Simmer Uncovered</h5>
+                <p class="text-xs text-cacao-700 mt-1">Simmer uncovered on medium-low for <strong>10–12 minutes</strong> until dissolved.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">4</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Customize</h5>
+                <p class="text-xs text-cacao-700 mt-1">Add milk or sweetener as desired. Stir vigorously with a whisk or batirol.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SWEET RECIPE -->
+        <div class="bg-parchment border border-cacao-600/20 rounded-2xl p-6 md:p-8 shadow-sm">
+          <div class="flex items-center gap-3 mb-6 pb-4 border-b border-cacao-600/10">
+            <span class="font-display font-bold text-lg md:text-xl text-cacao-900 uppercase">Sweet Blend</span>
+            <span class="text-xs text-cacao-600 bg-cacao-100 px-3 py-1 rounded-full font-semibold">1 Serving = 2 Tableas</span>
+          </div>
+
+          <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">1</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Add Water</h5>
+                <p class="text-xs text-cacao-700 mt-1">Pour <strong>250 mL (1 mug)</strong> of water into a pot.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">2</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Add Tableas</h5>
+                <p class="text-xs text-cacao-700 mt-1">Add <strong>2 tableas</strong> to the water.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">3</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Simmer Uncovered</h5>
+                <p class="text-xs text-cacao-700 mt-1">Simmer uncovered over medium-low for <strong>10–12 minutes</strong> until melted.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="w-8 h-8 rounded-full bg-cacao-800 text-amber-50 flex-shrink-0 flex items-center justify-center font-bold text-sm">4</span>
+              <div>
+                <h5 class="font-semibold text-sm text-cacao-900">Add Milk & Enjoy</h5>
+                <p class="text-xs text-cacao-700 mt-1">Add fresh or condensed milk as desired. Stir well before serving.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / ORDER INQUIRY -->
+  <section class="py-20 bg-cacao-900 text-parchment relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="font-script text-3xl md:text-4xl text-amber-200 mb-2">A blessing shared is a blessing multiplied.</p>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-6 tracking-tight">
+        Bring Authentic Philippine Tablea to Your Table
+      </h2>
+      <p class="text-cacao-100/80 text-sm sm:text-base max-w-xl mx-auto mb-10">
+        Order today for your daily breakfast ritual, comfort champorado, or heartfelt gift boxes.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="tel:09278888760" class="w-full sm:w-auto px-8 py-3.5 bg-amber-100 text-cacao-900 font-semibold rounded-full hover:bg-white transition shadow-lg flex items-center justify-center gap-2">
+          <svg class="w-5 h-5 text-cacao-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Call / SMS: 0927 8888 760
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-3.5 bg-cacao-800 text-amber-100 border border-cacao-700 font-medium rounded-full hover:bg-cacao-700 transition flex items-center justify-center gap-2">
+          <span>Message on Social Media</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-cacao-900 border-t border-cacao-800 text-cacao-100/70 py-12">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs sm:text-sm">
+      <div class="text-center md:text-left">
+        <span class="font-serif font-bold text-lg text-white block">Biyaya Tablea</span>
+        <span>Crafted with faith. Made with love.</span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-white transition flex items-center gap-1.5">
+          <span>📘</span> Facebook: <strong>@BiyayaTablea</strong>
+        </a>
+        <a href="#" class="hover:text-white transition flex items-center gap-1.5">
+          <span>📷</span> Instagram: <strong>@BiyayaTablea</strong>
+        </a>
+      </div>
+
+      <div class="text-center md:text-right">
+        <span>“Every good and perfect gift is from above” — James 1:17</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
